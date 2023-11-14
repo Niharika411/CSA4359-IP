@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown Menu Example</title>
+<style>
+select{
+font-style:Tahoma;
+font-size:60px;
+}
+table.th
+{
+border:1px solid black;
+background-color:#96D4D4;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Website Navigation</h1>
+<hr>
+<table>
+<th>
+<select id="menu">
+<option value="">Select Menu1</option>
+<option value="file:///C:/Niharika/SEM%207/INTERNET%20PROGRAMMING/PRACTICALS-THEORY/Calculator.htm">Calculator</option>
+<option value="file:///C:/Niharika/SEM%207/INTERNET%20PROGRAMMING/PRACTICALS-THEORY/IP_Forms.htm">Registration form</option>
+<option value="file:///C:/Niharika/SEM%207/INTERNET%20PROGRAMMING/PRACTICALS-THEORY/FLAG.htm">FLAG</option>
+</select>
+</th>
+<th>
+<select id="menu2">
+<option value="">Select Menu2</option>
+<option value="file:///C:/Niharika/SEM%207/INTERNET%20PROGRAMMING/PRACTICALS-THEORY/Calculator.htm">Calculator</option>
+<option value="file:///C:/Niharika/SEM%207/INTERNET%20PROGRAMMING/PRACTICALS-THEORY/IP_Forms.htm">Registration form</option>
+<option value="file:///C:/Niharika/SEM%207/INTERNET%20PROGRAMMING/PRACTICALS-THEORY/FLAG.htm">FLAG</option>
+</select>
+</th>
+</table>
+<hr>
+<script>
+document.grtElementById("menu").addEventListener("change",function()
+{
+varx=this.value;
+if(x)
+{
+window.location.href=x;
+}
+});
+</script>
+</body>
+</html>
